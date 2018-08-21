@@ -74,7 +74,7 @@ func amprate(pid int) {
         rate_b = curr_b - prev_b
         
         //fmt.Println("prev_c:", prev_c, "curr_c:", curr_c, "rate_c:", rate_c, "prev_b:", prev_b, "curr_b:", curr_b, "rate_b:", rate_b)
-        log.Printf("Amplification Factor: %d   [Requested: %.1f MB  Written: %.1f MB]", rate_b / rate_c, float64(rate_c)/1024.0/1024.0, float64(rate_b)/1024.0/1024.0)
+        log.Printf("Requested: %.1f MB  Written: %.1f MB  Amplification Factor: %d", float64(rate_c)/1024.0/1024.0, float64(rate_b)/1024.0/1024.0, rate_b / rate_c)
         time.Sleep(1 * time.Second)
     }
     
