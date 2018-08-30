@@ -3,4 +3,4 @@
 amp-o-meter
 ===========
 
-real time measure write amplification of px-storage
+measure write amplification of px-storage in real time
